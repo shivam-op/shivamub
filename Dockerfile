@@ -1,11 +1,10 @@
 #Repo Clonning ⚡♥️
-RUN git clone https://github.com/LEGEND-OS/LEGENDUSERBOT.git /root/userbot
+RUN git clone https://github.com/shivam-op/shivamop.git  
 
 #working directory 
-WORKDIR /root/userbot
-
-# Install requirements
-RUN pip3 install -U -r requirements.txt
+WORKDIR ./shivamop
+RUN pip instal --upgrade pip
+RUN pip3 install -r ./shivamop/requirements.txt
 
 ENV PATH="/home/userbot/bin:$PATH"
 
